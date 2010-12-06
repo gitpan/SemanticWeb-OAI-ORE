@@ -1,0 +1,52 @@
+=head1 NAME
+
+SemanticWeb::OAI::ORE - Modules to build, write and read OAI-ORE 
+Resource Maps
+
+=head1 DESCRIPTION
+
+These modules have been written against the v1.0 OAI-ORE specification
+(L<http://www.openarchives.org/ore/1.0/toc>). The main module is 
+
+=over
+
+=item L<SemanticWeb::OAI::ORE::ReM>
+
+=back
+
+with IO modules imlpementing parse/serialize for different formats
+
+=over
+
+=item L<SemanticWeb::OAI::ORE::N3>
+
+=item L<SemanticWeb::OAI::ORE::RDFXML>
+
+=item L<SemanticWeb::OAI::ORE::TriX>
+
+=back
+
+and supporting modules
+
+=over
+
+=item L<SemanticWeb::OAI::ORE::Model>
+
+=item L<SemanticWeb::OAI::ORE::Agent>
+
+=item L<SemanticWeb::OAI::ORE::Constant>
+
+=back
+
+=head1 SEE ALSO
+
+L<http://www.openarchives.org/ore>
+
+=head1 COPYRIGHT & LICENSE
+
+Copyright 2007-2010 Simeon Warner.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
+=cut
