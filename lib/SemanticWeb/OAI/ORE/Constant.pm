@@ -1,5 +1,4 @@
 package SemanticWeb::OAI::ORE::Constant;
-#$Id: Constant.pm,v 1.13 2010-12-06 14:44:15 simeon Exp $
 
 use warnings;
 use strict;
@@ -11,8 +10,6 @@ SemanticWeb::OAI::ORE::Constant - Module providing constants used by OAI-ORE
 Resource Map objects
 
 =cut
-
-our $VERSION = '0.93';
 
 use constant ORE_PREFIX    => 'ore';
 use constant ORE_NS        => 'http://www.openarchives.org/ore/terms/';

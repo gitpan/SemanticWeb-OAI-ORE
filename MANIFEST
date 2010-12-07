@@ -4,7 +4,7 @@ MANIFEST.SKIP
 META.yml # Will be created by "make dist"
 Makefile.PL
 README
-lib/SemanticWeb/OAI/ORE.pod
+lib/SemanticWeb/OAI/ORE.pm
 lib/SemanticWeb/OAI/ORE/Agent.pm
 lib/SemanticWeb/OAI/ORE/Constant.pm
 lib/SemanticWeb/OAI/ORE/Model.pm

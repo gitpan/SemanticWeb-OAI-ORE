@@ -1,18 +1,9 @@
 package SemanticWeb::OAI::ORE::ReM;
-#$Id: ReM.pm,v 1.31 2010-12-06 14:49:55 simeon Exp $
+#$Id: ReM.pm,v 1.32 2010-12-07 16:38:29 simeon Exp $
 
 =head1 NAME
 
 SemanticWeb::OAI::ORE::ReM - Module implementing OAI-ORE Resource Map object
-
-=head1 VERSION
-
-Version 0.94. Written against the v1.0 OAI-ORE specification 
-(L<http://www.openarchives.org/ore/1.0/toc>).
-
-=cut
-
-our $VERSION = '0.94';
 
 =head1 SYNPOSIS
 
@@ -22,6 +13,9 @@ class L<SemanticWeb::OAI::ORE::Model> which is the RDF model and may be
 accessed directly via $rem->model. The access methods here are intended 
 to hide the RDF and instead work more naturally with the constraints
 and language of OAI-ORE.
+
+Written against the v1.0 OAI-ORE specification 
+(L<http://www.openarchives.org/ore/1.0/toc>).
 
 =head1 DESCRIPTION
 
@@ -45,7 +39,7 @@ and minimal metadata is required:
  use SemanticWeb::OAI::ORE::ReM;
 
  my $rem=SemanticWeb::OAI::ORE::ReM->new('ar'=>['uri:1','uri:2']);
- print $rem->serialize('atom');
+ print $rem->serialize('rdfxml');
 
 =head2 PARSING A RESOURCE MAP
 
@@ -87,7 +81,7 @@ sub new {
   my $self={'uri'=>undef,
             'uri_agg'=>undef,
             'model'=>undef,
-            'io'=>{'atom'   =>'SemanticWeb::OAI::ORE::Atom',
+            'io'=>{#'atom'   =>'SemanticWeb::OAI::ORE::Atom',
                    'rdfxml' =>'SemanticWeb::OAI::ORE::RDFXML',
                    'trix'   =>'SemanticWeb::OAI::ORE::TriX',
                    'n3'     =>'SemanticWeb::OAI::ORE::N3'},
@@ -725,7 +719,6 @@ OAI-PMH specification are found at L<http://www.openarchives.org/>.
 This module is the primary class for support of OAI-ORE resource maps. 
 Other parts include:
 L<SemanticWeb::OAI::ORE::Model>
-L<SemanticWeb::OAI::ORE::Atom>
 L<SemanticWeb::OAI::ORE::N3>
 L<SemanticWeb::OAI::ORE::Trix>
 
@@ -737,6 +730,9 @@ including L<SemanticWeb::OAI::Harvester>.
 Simeon Warner, C<< <simeon at cpan.org> >>
 
 =head1 BUGS
+
+Support for Atom format output is not yet provided, this should be
+L<SemanticWeb::OAI::ORE::Atom>.
 
 Please report any bugs or feature requests to
 C<bug-net-oai-ore at rt.cpan.org>, or through the web interface at

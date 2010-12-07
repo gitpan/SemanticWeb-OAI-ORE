@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                SemanticWeb-OAI-ORE
-version:             0.94
+version:             0.95
 abstract:            Modules to read/write/modify OAI-ORE resource maps
 license:             ~
 author:              
@@ -8,15 +8,15 @@ author:
 generated_by:        ExtUtils::MakeMaker version 6.42
 distribution_type:   module
 requires:     
-    Algorithm::Diff:               0
-    Class::Accessor:               0
-    Data::UUID:                    0
-    DateTime:                      0
+    Algorithm::Diff:               1.1902
+    Class::Accessor:               0.34
+    Data::UUID:                    1.2
+    DateTime:                      0.5
     RDF::Core:                     0.51
     RDF::Core::Model:              0
     RDF::Notation3:                0.91
     RDF::Notation3::RDFCore:       0
-    Test::More:                    0
+    Test::More:                    0.94
     XML::Atom::Syndication:        0.942
     XML::Atom::Syndication::Writer: 0
     XML::Writer:                   0.611
