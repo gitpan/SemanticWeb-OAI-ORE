@@ -60,3 +60,4 @@ t/examples/jcdl2008_paper/example.n3
 t/examples/jcdl2008_paper/example.atom.dump
 t/examples/jcdl2008_paper/example.n3.dump
 t/tmp/README
+META.json                                Module JSON meta-data (added by MakeMaker)

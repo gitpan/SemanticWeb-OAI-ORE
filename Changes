@@ -1,5 +1,10 @@
 Revision history for SemanticWeb-OAI-ORE
 
+1.00    2013-07-31
+	Fix tests to handle varying attribute order obtained in RDFXML output
+	Bumped version to 1.00 as code is stable
+	No change to library code except version number
+
 0.95	2010-12-07
 	Change to make SemanticWeb::OAI:ORE a module rather than just pod. Lazy include
         is now 'use SemanticWeb::OAI:ORE'.
@@ -16,5 +21,5 @@ Revision history for SemanticWeb-OAI-ORE
         First version to match OAI-ORE alpha specification
         http://www.openarchives.org/ore/0.1/toc
 
-$Id: Changes,v 1.3 2010-12-07 16:36:49 simeon Exp $
+$Id: Changes,v 1.4 2013-07-31 15:29:53 simeon Exp $
 

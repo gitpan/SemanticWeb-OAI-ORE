@@ -7,12 +7,12 @@ Resource Maps
 
 =head1 VERSION
 
-Version 0.95. Written against the v1.0 OAI-ORE specification
+Version 1.00. Written against the v1.0 OAI-ORE specification
 (L<http://www.openarchives.org/ore/1.0/toc>).
 
 =cut
 
-our $VERSION = '0.95';
+our $VERSION = '1.00';
 
 =head1 DESCRIPTION
 
@@ -71,7 +71,7 @@ L<http://www.openarchives.org/ore>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007-2010 Simeon Warner.
+Copyright 2007-2013 Simeon Warner.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
